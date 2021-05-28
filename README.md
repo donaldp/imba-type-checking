@@ -62,7 +62,7 @@ class Person
 Types
 -----
 
-You can find the list of supported typers here: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#primitive_values
+You can find the list of supported types here: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#primitive_values
 
 > Note: you can also create custom types by defining a new `class`.
 
