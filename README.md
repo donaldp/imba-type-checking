@@ -14,16 +14,16 @@ npm i @harnessflex/types
 Basic Usage
 -----------
 
-To start using Flex Types in your project, simply import `@flex`:
+To start using Flex Types in your project, simply import `@func`:
 
 ```js
-import { @flex } from '@harnessflex/types'
+import { @func } from '@harnessflex/types'
 
 class Car
 
-    @flex({ expects: [ String, Number ], returns: String })
+    @func({ expects: [ String, Number ], returns: String })
 
-    def create name\string, year\number
+    def create name, year
         const car = {
             name
             year
@@ -45,7 +45,26 @@ returns | `type: any`     | Return type    |
 
 <br />
 
-> Note: you can also use `@func` instead of `@flex`.
+Note: you can also use `@flex` instead of `@func`:
+
+```js
+import { @flex } from '@harnessflex/types'
+
+class Person
+
+    @flex({ expects: [ String ] })
+
+    def find name
+		# do something
+
+```
+
+Types
+-----
+
+You can find the list of supported typers here: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#primitive_values
+
+> Note: you can also create custom types by defining a new `class`.
 
 Security
 -------
