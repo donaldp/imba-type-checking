@@ -21,17 +21,17 @@ import { @func } from '@harnessflex/types'
 
 class Car
 
-    @func({ expects: [ String, Number ], returns: String })
+	@func({ expects: [ String, Number ], returns: String })
 
-    def create name, year
-        const car = {
-            name
-            year
-        }
+	def create name, year
+		const car = {
+			name
+			year
+		}
 
 		# create car...
 
-        "Succsessfully created a new car: {name}"
+		"Succsessfully created a new car: {name}"
 
 ```
 
@@ -52,9 +52,9 @@ import { @flex } from '@harnessflex/types'
 
 class Person
 
-    @flex({ expects: [ String ] })
+	@flex({ expects: [ String ] })
 
-    def find name
+	def find name
 		# do something
 
 ```
