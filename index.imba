@@ -17,6 +17,16 @@ class Person
 			}
 		]
 
+	@func({
+		expects: [ String, String ]
+		returns: Object
+	})
+	static def add name\string, planet\string
+		{
+			name
+			planet
+		}
+
 	@func({ expects: [ String ], returns: Object } )
 	static def find name\string
 		const results = #people.filter do(person\Object)
@@ -27,5 +37,4 @@ class Person
 			count: results.length
 		}
 
-
-console.log(Person.find(20))
+console.log Person.add('Donald', 'Earth')
