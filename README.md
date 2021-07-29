@@ -43,7 +43,7 @@ class Car
 
         # create car...
 
-        "Succsessfully created a new car: {name}"
+        "Successfully created a new car: {name}"
 
 ```
 
