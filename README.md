@@ -22,55 +22,6 @@ Then finally, you can run the application:
 ```
 npm run start
 ```
-
-Basic Usage
------------
-
-To start using Flex Types in your project, simply import `@func`:
-
-```js
-import { @func } from '@harnessflex/types'
-
-class Car
-
-    @func({ expects: [ String, Number ], returns: String })
-
-    def create name, year
-        const car = {
-            name
-            year
-        }
-
-        # create car...
-
-        "Successfully created a new car: {name}"
-
-```
-
-API
----
-
-Name    | Type            | Description     |
-:-------|:---------------|:-----------------|
-expects | `params: any[]` | Parameter types |
-returns | `type: any`     | Return type     |
-
-<br />
-
-Note: you can also use `@flex` instead of `@func`:
-
-```js
-import { @flex } from '@harnessflex/types'
-
-class Person
-
-    @flex({ expects: [ String ] })
-
-    def find name
-        # do something
-
-```
-
 Types
 -----
 
