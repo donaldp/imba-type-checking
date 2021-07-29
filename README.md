@@ -2,13 +2,25 @@
 
 Flex Types, provides static type checking in Imba.
 
-Install
+Getting Started
 -------
 
-This package is automatically installed with the Harness Flex Framework.
+First, you need to clone the repo:
 
 ```
-npm i @harnessflex/types
+git clone https://github.com/harnessflex/types.git
+```
+
+Then you need to install the dependencies:
+
+```
+npm install
+```
+
+Then finally, you can run the application:
+
+```
+npm run start
 ```
 
 Basic Usage
@@ -38,10 +50,10 @@ class Car
 API
 ---
 
-Name    | Type            | Description    |
-:-------|:---------------|:----------------|
-expects | `params: any[]` | Paramter types |
-returns | `type: any`     | Return type    |
+Name    | Type            | Description     |
+:-------|:---------------|:-----------------|
+expects | `params: any[]` | Parameter types |
+returns | `type: any`     | Return type     |
 
 <br />
 

@@ -4,11 +4,13 @@
   "description": "",
   "main": "lib/index.js",
   "scripts": {
+    "start": "imba -w index.imba",
+    "build": "imbac src --output=lib --platform=node --clean",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Donald Pakkies <donaldpakkies@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "imba": "^2.0.0-alpha.133"
+    "imba": "^2.0.0-alpha.155"
   }
 }

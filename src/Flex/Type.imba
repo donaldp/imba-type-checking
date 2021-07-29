@@ -13,7 +13,7 @@ class Type
 	static def evaluateParams definition\object, args\object
 		let position = 1
 
-		definition[0].params.forEach do(type, key)
+		definition[0].expects.forEach do(type, key)
 			if !(type) || type == null || type == undefined
 				throw new TypeError "{type} is not a valid type."
 

@@ -26,8 +26,11 @@ def flex target, key, descriptor
 
 		# evaluate params.
 
-		if definition[0].hasOwnProperty('params') && Array.isArray(definition[0].params)
+		if definition[0].hasOwnProperty('expects') && Array.isArray(definition[0].expects)
 			Type.evaluateParams definition, arguments
+
+		elif definition[0].hasOwnProperty('expects')
+			throw new TypeError('\"expects\" is not an array.')
 
 		return response ?? value.apply(this, arguments)
 
